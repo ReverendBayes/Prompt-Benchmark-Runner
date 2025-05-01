@@ -1,6 +1,3 @@
-# Prompt-Benchmark-Runner
-A CLI that loads a list of prompt templates, runs them against your OpenAI (or any) LLM, and spits out a CSV of latency, token-usage, and qualitative scores (via a reference answer).
-
 # Prompt-Benchmark Runner
 ## What it is 
 A CLI that loads a list of prompt templates, runs them against your OpenAI (or any) LLM, and spits out a CSV of latency, token-usage, and qualitative scores (via a reference answer).
@@ -10,11 +7,6 @@ A CLI that loads a list of prompt templates, runs them against your OpenAI (or a
 * One file, one command → immediate insights into which prompt earns you the best ROUGE/F1/latency trade-off.
 
 ## Key features
-python promptbench.py \
-  --prompts prompts.json \
-  --test-cases cases.csv \
-  --model gpt-4-turbo \
-  --output results.csv
 * Supports automatic metric computation (BLEU, ROUGE)
 * Pluggable scorer interface
 
